@@ -1,0 +1,141 @@
+/* --------------------------
+--------BASIC SETUP----------
+----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', 'sans-serif';
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 40px 0;
+}
+/* --------------------------
+-------------HEADER----------
+----------------------------- */
+header {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/sushi-platter-2.jpg);
+  background-size: cover;
+  background-position: center; */
+  background: #00cec9;
+  height: 70vh;
+}
+
+h1 {
+  color: #fff;
+  font-size: 180%;
+}
+
+.logo-text {
+  float: left;
+  margin-top: 50px;
+}
+
+ul {
+  float: right;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 50px;
+}
+
+.hero-text {
+  position: relative;
+  margin-top: 20%;
+}
+
+.hero-text input {
+  border-radius: 5px;
+  height: 45px;
+  width: 500px;
+  outline: none;
+  border: 2px solid #aaa;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  padding: 5px;
+}
+
+.hero-text i {
+  position: absolute;
+  top: 108px;
+  left: 499px;
+  background: #6c5ce7;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 115%;
+  border: 1px solid #fff;
+}
+
+/* -----------------
+----SECTION MENU----
+-------------------- */
+#menu {
+  background: #fff;
+}
+
+.box p {
+  max-width: 450px;
+  font-size: 90%;
+  padding: 0 10px;
+  line-height: 125%;
+}
+
+.box a {
+  font-size: 80%;
+  text-decoration: none;
+  padding: 0 10px;
+  color: #00cec9;
+}
+
+/* -----------------
+----SECTION DELIVERY----
+-------------------- */
+#delivery {
+  background: #fab1a0;
+}
+/* -----------------
+----SECTION OPTIONS----
+-------------------- */
+#options {
+  background: #fff;
+}
+
+#options h2 {
+  margin-bottom: 20px;
+}
+
+.box-color {
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  font-size: 120%;
+  background: #dfe6e9;
+  padding: 5px;
+  font-weight: bold;
+}
+/* -----------------
+----BUSINESS----
+-------------------- */
+#business {
+  background: #dfe6e9;
+}
+
+.business-box {
+  background: #fff;
+  padding: 8px;
+}
