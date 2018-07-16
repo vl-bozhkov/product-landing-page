@@ -19,7 +19,7 @@
     <header id="header">
 
         <div class="row">
-            <p class="logo-text">De Sushi </p>
+            <!-- <p class="logo-text">De Sushi </p>
 
             <nav id="nav-bar">
 
@@ -31,27 +31,32 @@
                     <i class="fa fa-phone"></i>Contact</a>
                 <a class="nav-link" href="#working">
                     <i class="fa fa-paw"></i>Dogs</a>
-            </nav>
-
-            <!-- <nav id="nav-bar">
-                <p class="logo-text">De Sushi
-
-
-                    <ul>
-                        <li>
-                            <a class="nav-link" href="#menu">text1</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#delivery">text2</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#business">text3</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#working">text4</a>
-                        </li>
-                    </ul>
             </nav> -->
+
+            <nav id="nav-bar">
+
+                <!-- <div class="row"> -->
+                <div class="logo-box">
+                    <p class="logo-text">De Sushi</p>
+                    <!-- <img id="header-img" src="./resources/img/logo-sky.svg" alt=""> -->
+                </div>
+
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#menu">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#delivery">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#business">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#working">Dogs</a>
+                    </li>
+                </ul>
+                <!-- </div> -->
+            </nav>
 
             <div class="hero-text">
                 <h1>Your favourite restaurants,
@@ -68,14 +73,18 @@
 
 
             </div>
-            <!-- <div class="img-box">
-                <img id="header-img" src="./resources/img/food-1.jpg">
-            </div> -->
+            <div class="img-box">
+                <!-- <h2>Have you got the app?</h2>
+                <p>Get yours now - available on Android app stores!</p>
+                <img id="header-img" src="./resources/img/download-app-android.png"> -->
+                <p id="header-text">Get yours app - available on the iOS app stores!</p>
+                <img id="header-img" src="./resources/img/iphone-x.png" alt="">
+            </div>
 
         </div>
     </header>
 
-    <section id="menu">
+    <section id="menu" class="js--section-menu">
         <div class="row">
             <h2>Whats on Menu?</h2>
         </div>
@@ -273,35 +282,33 @@
 
     <footer class="clearfix">
         <div class="row">
-            <ul id="icons-grid">
-                <li>
-                    <a href="https://github.com/vl-bozhkov" target="_blank">
-                        <i class="icon ion-logo-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://codepen.io/dashboard/" target="_blank">
-                        <i class="icon ion-logo-codepen"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/vladi_bozhkov/" target="_blank">
-                        <i class="icon ion-logo-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/vladimir.bozhkov" target="_blank">
-                        <i class="icon ion-logo-facebook"></i>
-                    </a>
-                </li>
-            </ul>
-            <span id="footer-text">Coded and Designed with
-                <i class="icon ion-md-heart"></i> by Vladimir Bozhkov &copy; 2018</span>
+            <div class="icons-grid">
+
+                <a href="https://github.com/vl-bozhkov" target="_blank">
+                    <i class="icon ion-logo-github big-icon"></i>
+                </a>
+
+                <a href="https://codepen.io/dashboard/" target="_blank">
+                    <i class="icon ion-logo-codepen big-icon"></i>
+                </a>
+
+                <a href="https://www.instagram.com/vladi_bozhkov/" target="_blank">
+                    <i class="icon ion-logo-instagram big-icon"></i>
+                </a>
+
+                <a href="https://www.facebook.com/vladimir.bozhkov" target="_blank">
+                    <i class="icon ion-logo-facebook big-icon"></i>
+                </a>
+                <span id="footer-text">Coded and Designed with
+                    <i class="icon ion-md-heart"></i> by Vladimir Bozhkov &copy; 2018</span>
+            </div>
+
         </div>
 
     </footer>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 

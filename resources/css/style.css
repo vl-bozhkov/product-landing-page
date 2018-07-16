@@ -25,25 +25,72 @@ html {
 section {
   padding: 40px 0;
 }
+
 /* --------------------------
--------------HEADER----------
+--------NAV----------
 ----------------------------- */
-header {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/sushi-platter-2.jpg);
-  background-size: cover;
-  background-position: center; */
-  background: #00cec9;
-  height: 70vh;
-}
-
-h1 {
-  color: #fff;
-  font-size: 220%;
-  font-weight: 300;
-}
-
 #nav-bar {
+  position: fixed;
+  top: 0px;
+  width: 80%;
+}
+.logo-box {
+  margin-top: 8px;
+  float: left;
+}
+
+.logo-text {
+  color: #fff;
+  font-weight: 100;
+}
+
+.logo-text {
+  margin-top: 10px;
+  color: #fff;
+}
+
+ul li {
+  float: right;
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  font-weight: 300;
+  transition: all 0.2s;
+}
+
+ul li a:hover {
+  color: #6c5ce7;
+  border-bottom: 1px solid #6c5ce7;
+}
+
+.sticky {
+  background: #fff;
+  color: #000;
+  font-size: 80%;
+  padding-bottom: 10px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.sticky .nav-link {
+  color: #000;
+  margin-right: 50px;
+}
+
+.sticky .logo-text {
+  color: #000;
+  font-size: 90%;
+  margin-left: 10px;
+}
+
+/* #nav-bar {
   display: flex;
   justify-content: flex-end;
 }
@@ -78,7 +125,27 @@ h1 {
   font-weight: 100;
   color: #fff;
   letter-spacing: 3px;
+} */
+/* --------------------------
+-------------HEADER----------
+----------------------------- */
+header {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/sushi-platter-2.jpg);
+  background-size: cover;
+  background-position: center; */
+  background: #00cec9;
+  height: 70vh;
 }
+
+h1 {
+  color: #fff;
+  font-size: 180%;
+  font-weight: 300;
+  letter-spacing: 3px;
+  word-spacing: 1px;
+}
+
 /*
 #header ul {
   float: right;
@@ -126,15 +193,43 @@ h1 {
   background: #6c5ce7;
   border: none;
   float: left;
+  transition: all 0.2s;
+}
+
+#submit:hover {
+  background: #513ee3;
 }
 .img-box {
-  position: relative;
+  /* position: relative; */
+  float: right;
+  margin-top: -130px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.img-box h2 {
+  font-weight: 300;
+}
+
+.img-box h2,
+.img-box p,
+.img-box img {
+  margin-bottom: 20px;
 }
 #header-img {
   position: absolute;
-  left: 720px;
-  top: -290px;
-  width: 40%;
+  left: 880px;
+  top: 140px;
+  width: 15%;
+}
+
+#header-text {
+  position: absolute;
+  left: 1080px;
+  top: 150px;
+  width: 10%;
+  font-size: 80%;
+  font-weight: 100;
 }
 
 /* -----------------
@@ -157,6 +252,11 @@ h1 {
   text-decoration: none;
   padding: 0 10px;
   color: #00cec9;
+  transition: all 0.2s;
+}
+
+.box a:hover {
+  color: #00aca8;
 }
 
 .box h3 {
@@ -234,6 +334,11 @@ h1 {
   padding: 10px 20px;
   border: none;
   font-size: 90%;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #00aca8;
 }
 
 .business img {
@@ -253,7 +358,8 @@ h1 {
 }
 
 .card {
-  border: 1px solid #000;
+  border: 1px solid #636e72;
+  /* box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .card img {
@@ -284,6 +390,53 @@ h1 {
 footer {
   background: #2d3436;
 }
+
+.icons-grid {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ion-logo-github,
+.ion-logo-codepen,
+.ion-logo-instagram,
+.ion-logo-facebook {
+  color: #fff;
+  font-size: 150%;
+  transition: all 0.2s;
+}
+
+.ion-logo-github:hover {
+  color: #bd2c00;
+}
+
+.ion-logo-instagram:hover {
+  color: #4e433c;
+}
+
+.ion-logo-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-logo-codepen:hover {
+  color: #0ebeff;
+}
+
+.ion-md-heart {
+  color: #d63031;
+  font-size: 110%;
+}
+
+#footer-text {
+  color: #fff;
+  font-size: 90%;
+}
+/* #footer-text {
+  display: flex;
+  justify-content: flex-end;
+} */
 
 /* -----------------
 ----MEDIA QUERY----
