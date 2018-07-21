@@ -1,0 +1,130 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  /* .row {
+    padding: 0 2%;
+  }*/
+
+  .row {
+    padding: 0 2%;
+  }
+
+  #header .row {
+    padding: 0 5%;
+  }
+
+  .img-box {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 90%;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .row {
+    padding: 0 2%;
+  }
+  .col {
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+  .hero-text {
+    margin-top: 25%;
+  }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  .col {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  body {
+    font-size: 90%;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+
+  .main-nav {
+    float: left;
+    margin-left: 50px;
+  }
+
+  .main-nav li {
+    display: block;
+    float: none;
+  }
+
+  .nav-link {
+    display: block;
+    border-bottom: 0;
+    padding: 7px 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  ul li a:hover {
+    color: transparent;
+    border-bottom: none;
+  }
+
+  .sticky .mobile-nav-icon i {
+    color: #555;
+  }
+
+  /* .col {
+    width: 100%;
+  } */
+  h1 {
+    font-size: 150%;
+  }
+
+  /* .business {
+    margin: 20px;
+  } */
+  .card {
+    margin: 10px 0;
+  }
+  .box {
+    margin: 30px 0;
+  }
+
+  .hero-text {
+    margin-top: 45%;
+  }
+
+  #email {
+    width: 300px;
+  }
+
+  .business-box {
+    margin: 15px 0;
+  }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 130%;
+  }
+
+  .hero-text {
+    margin-top: 55%;
+  }
+
+  #email {
+    width: 200px;
+  }
+}

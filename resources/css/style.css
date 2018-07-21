@@ -32,7 +32,8 @@ section {
 #nav-bar {
   position: fixed;
   top: 0px;
-  width: 80%;
+  width: 100%;
+  z-index: 999999;
 }
 .logo-box {
   margin-top: 8px;
@@ -42,18 +43,19 @@ section {
 .logo-text {
   color: #fff;
   font-weight: 100;
-}
-
-.logo-text {
+  margin-left: 50px;
   margin-top: 10px;
   color: #fff;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 
-ul li {
+.main-nav li {
   float: right;
-  display: inline-block;
+  /* display: inline-block; */
   margin-right: 40px;
   margin-top: 15px;
+  list-style: none;
 }
 
 ul li a {
@@ -64,6 +66,8 @@ ul li a {
   border-bottom: 1px solid #fff;
   font-weight: 300;
   transition: all 0.2s;
+  font-size: 90%;
+  font-weight: 100;
 }
 
 ul li a:hover {
@@ -77,6 +81,9 @@ ul li a:hover {
   font-size: 80%;
   padding-bottom: 10px;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 
 .sticky .nav-link {
@@ -87,7 +94,20 @@ ul li a:hover {
 .sticky .logo-text {
   color: #000;
   font-size: 90%;
-  margin-left: 10px;
+  margin-left: 50px;
+}
+
+/* MOBILE NAV */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
 }
 
 /* #nav-bar {
@@ -264,7 +284,7 @@ h1 {
 }
 #menu .box img {
   width: 100%;
-  height: 260px;
+  height: auto;
 }
 /* .box img {
   width: 350px;
@@ -278,7 +298,7 @@ h1 {
 }
 #delivery .box img {
   width: 100%;
-  height: 240px;
+  height: auto;
 }
 #delivery .layout-text {
   max-width: 100%;
@@ -316,7 +336,7 @@ h1 {
 .business-box {
   background: #fff;
   padding: 18px;
-  height: 215px;
+  height: 250px;
 }
 
 .business-box h3,
@@ -341,15 +361,17 @@ h1 {
   background: #00aca8;
 }
 
-.business img {
-  width: 560px;
-  height: 215px;
-}
-
-#video {
+/* .business img {
   width: 100%;
   height: 215px;
+} */
+
+#video,
+#secondary-video {
+  width: 100%;
+  height: 250px;
 }
+
 /* -----------------
 ----WORKING----
 -------------------- */
@@ -409,11 +431,11 @@ footer {
 }
 
 .ion-logo-github:hover {
-  color: #bd2c00;
+  color: #c9510c;
 }
 
 .ion-logo-instagram:hover {
-  color: #4e433c;
+  color: #8a3ab9;
 }
 
 .ion-logo-facebook:hover {
@@ -439,30 +461,16 @@ footer {
 } */
 
 /* -----------------
-----MEDIA QUERY----
+----ANIMATIONS----
 -------------------- */
-
-@media screen and (max-width: 920px) {
-  a {
-    font-size: 150%;
-  }
-
-  nav {
-    justify-content: center;
-  }
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-  }
-
-  a {
-    color: #fff;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated {
+  opacity: 1;
 }
